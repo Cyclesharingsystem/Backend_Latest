@@ -285,4 +285,8 @@ public class RideServiceImpl implements RideService {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public long getTotalRides() {
+        return rideRepository.countTotalRides();
+    }
 }

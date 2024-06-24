@@ -77,4 +77,8 @@ public class RideController {
     public List<RideDto> getOnRideRides() {
         return rideHistoryService.getOnRideRides();
     }
+    @GetMapping("/total")
+    public long getTotalRides() {
+        return rideHistoryService.getTotalRides();
+    }
 }

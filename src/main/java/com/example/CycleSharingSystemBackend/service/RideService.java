@@ -27,4 +27,6 @@ public interface RideService {
 
     RideDto getRideById(Long rideId);
     List<RideDto> getOnRideRides();
+
+    long getTotalRides();
 }
